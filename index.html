@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/piano.ico" rel="shortcut icon">
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400;800&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <title>MyPiano</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Virtual Piano</h1>
+  </header>
+  <main class="main">
+    <div class="btn-container">
+      <button class="btn btn-notes btn-active">Notes</button>
+      <button class="btn btn-letters">Letters</button>
+    </div>
+    <div class="piano">
+      <div class="piano-key" data-letter="D" data-note="c" data-num="0"></div>
+      <div class="piano-key" data-letter="F" data-note="d" data-num="1"></div>
+      <div class="piano-key" data-letter="G" data-note="e" data-num="2"></div>
+      <div class="piano-key" data-letter="H" data-note="f" data-num="3"></div>
+      <div class="piano-key" data-letter="J" data-note="g" data-num="4"></div>
+      <div class="piano-key" data-letter="K" data-note="a" data-num="5"></div>
+      <div class="piano-key" data-letter="L" data-note="b" data-num="6"></div>
+      <div class="keys-sharp">
+        <div class="piano-key sharp" data-letter="R" data-note="c♯" data-num="7"></div>
+        <div class="piano-key sharp" data-letter="T" data-note="d♯" data-num="8"></div>
+        <div class="piano-key sharp none"></div>
+        <div class="piano-key sharp" data-letter="U" data-note="f♯" data-num="9"></div>
+        <div class="piano-key sharp" data-letter="I" data-note="g♯" data-num="10"></div>
+        <div class="piano-key sharp" data-letter="O" data-note="a♯" data-num="11"></div>
+      </div>
+    </div>
+    <button class="fullscreen openfullscreen"></button>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
